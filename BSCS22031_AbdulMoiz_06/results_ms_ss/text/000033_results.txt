@@ -1,5 +1,0 @@
-Objectness Detection Results for: 000033
-Date: 2025-12-10 02:31:05
-Number of top windows: 10
---------------------------------------------------
-

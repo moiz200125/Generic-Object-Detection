@@ -13,6 +13,56 @@ from .ss_cue import SuperpixelStraddlingCue
 from .ed_cue import EdgeDensityCue
 from .integral_image import IntegralImage
 
+def calculate_iou(boxA, boxB):
+    """Calculate IoU between two windows"""
+    # determine the (x, y)-coordinates of the intersection rectangle
+    xA = max(boxA[0], boxB[0])
+    yA = max(boxA[1], boxB[1])
+    xB = min(boxA[2], boxB[2])
+    yB = min(boxA[3], boxB[3])
+
+    # compute the area of intersection rectangle
+    interArea = max(0, xB - xA) * max(0, yB - yA)
+
+    # compute the area of both the prediction and ground-truth rectangles
+    boxAArea = (boxA[2] - boxA[0]) * (boxA[3] - boxA[1])
+    boxBArea = (boxB[2] - boxB[0]) * (boxB[3] - boxB[1])
+
+    # compute the intersection over union by taking the intersection
+    # area and dividing it by the sum of prediction + ground-truth
+    # areas - the interesection area
+    iou = interArea / float(boxAArea + boxBArea - interArea + 1e-6)
+    return iou
+
+def non_max_suppression(boxes, scores, iou_threshold=0.3):
+    """
+    Apply Non-Maximum Suppression to filter overlapping boxes
+    """
+    if len(boxes) == 0:
+        return []
+    
+    # Sort indices by score (descending)
+    idxs = np.argsort(scores)[::-1]
+    
+    pick = []
+    
+    while len(idxs) > 0:
+        # Pick the current highest score box
+        last = idxs.shape[0]
+        i = idxs[0]
+        pick.append(i)
+        
+        # Find IoU of this box with all others
+        ious = []
+        for j in range(1, last):
+            iou = calculate_iou(boxes[i], boxes[idxs[j]])
+            ious.append(iou)
+        
+        # Keep only boxes with IoU less than threshold
+        idxs = np.delete(idxs, np.concatenate(([0], np.where(np.array(ious) > iou_threshold)[0] + 1)))
+        
+    return pick
+
 class ObjectnessDetector:
     """
     Complete Objectness Detector for Group A
@@ -192,6 +242,17 @@ class ObjectnessDetector:
         window_scores.sort(key=lambda x: x[1], reverse=True)
         
         # Return top K windows
+        # Optional: Apply NMS if requested in params
+        if self.params.get('apply_nms', True):
+            # Extract boxes and scores
+            boxes = [w[0] for w in window_scores]
+            scores = [w[1] for w in window_scores]
+            nms_threshold = self.params.get('nms_threshold', 0.3)
+            
+            pick_indices = non_max_suppression(boxes, scores, nms_threshold)
+            filtered_scores = [window_scores[i] for i in pick_indices]
+            window_scores = filtered_scores
+
         top_k = min(self.params['top_k_windows'], len(window_scores))
         return window_scores[:top_k], (ms, ss, ed)
     
