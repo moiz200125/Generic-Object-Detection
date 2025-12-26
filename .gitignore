@@ -1,0 +1,13 @@
+# Ignore Data folder (Too large for GitHub)
+data/
+data/*
+
+# Ignore Python Artifacts
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Ignore OS files
+.DS_Store
