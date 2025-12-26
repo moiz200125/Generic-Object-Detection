@@ -1,0 +1,75 @@
+Objectness Detection Results for: 000007
+Date: 2025-12-25 18:49:42
+Number of top windows: 10
+--------------------------------------------------
+
+Window 1:
+  Coordinates: [0, 0, 500, 333]
+  Dimensions: 500 x 333
+  Total Score: 0.354417
+  MS Score:    0.139790
+  SS Score:    0.995003
+------------------------------
+Window 2:
+  Coordinates: [0, 0, 250, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.350622
+  MS Score:    0.273572
+  SS Score:    0.803976
+------------------------------
+Window 3:
+  Coordinates: [50, 0, 300, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.324956
+  MS Score:    0.294239
+  SS Score:    0.690867
+------------------------------
+Window 4:
+  Coordinates: [0, 0, 375, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.322250
+  MS Score:    0.177182
+  SS Score:    0.837922
+------------------------------
+Window 5:
+  Coordinates: [250, 0, 500, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.317061
+  MS Score:    0.141165
+  SS Score:    0.868651
+------------------------------
+Window 6:
+  Coordinates: [200, 0, 450, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.316545
+  MS Score:    0.192067
+  SS Score:    0.799060
+------------------------------
+Window 7:
+  Coordinates: [100, 0, 350, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.313219
+  MS Score:    0.263343
+  SS Score:    0.692940
+------------------------------
+Window 8:
+  Coordinates: [100, 0, 475, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.311372
+  MS Score:    0.181747
+  SS Score:    0.795577
+------------------------------
+Window 9:
+  Coordinates: [0, 33, 250, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.305316
+  MS Score:    0.222622
+  SS Score:    0.720892
+------------------------------
+Window 10:
+  Coordinates: [50, 33, 300, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.305302
+  MS Score:    0.253942
+  SS Score:    0.679084
+------------------------------

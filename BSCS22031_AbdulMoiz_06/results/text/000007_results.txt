@@ -1,0 +1,146 @@
+============================================================
+GROUP A OBJECTNESS DETECTION RESULTS
+============================================================
+
+Image: 000007
+Date: 2025-12-10 03:03:51
+Top Windows: 10
+
+Parameters:
+  MS threshold: 0.2
+  SS segments: 100
+  ED border ratio: 0.1
+  Weights: MS=0.40, SS=0.30, ED=0.30
+
+------------------------------------------------------------
+
+Window 1:
+  Coordinates: [0, 0, 500, 333]
+  Dimensions: 500 x 333
+  Total Score: 0.654417
+    - MS Score: 0.139790 (40%)
+    - SS Score: 0.995003 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.055916 (8.5% of total)
+    - SS: 0.298501 (45.6% of total)
+    - ED: 0.300000 (45.8% of total)
+----------------------------------------
+
+Window 2:
+  Coordinates: [0, 0, 250, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.650622
+    - MS Score: 0.273572 (40%)
+    - SS Score: 0.803976 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.109429 (16.8% of total)
+    - SS: 0.241193 (37.1% of total)
+    - ED: 0.300000 (46.1% of total)
+----------------------------------------
+
+Window 3:
+  Coordinates: [50, 0, 300, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.624956
+    - MS Score: 0.294239 (40%)
+    - SS Score: 0.690867 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.117695 (18.8% of total)
+    - SS: 0.207260 (33.2% of total)
+    - ED: 0.300000 (48.0% of total)
+----------------------------------------
+
+Window 4:
+  Coordinates: [0, 0, 375, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.622250
+    - MS Score: 0.177182 (40%)
+    - SS Score: 0.837922 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.070873 (11.4% of total)
+    - SS: 0.251377 (40.4% of total)
+    - ED: 0.300000 (48.2% of total)
+----------------------------------------
+
+Window 5:
+  Coordinates: [250, 0, 500, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.617061
+    - MS Score: 0.141165 (40%)
+    - SS Score: 0.868651 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.056466 (9.2% of total)
+    - SS: 0.260595 (42.2% of total)
+    - ED: 0.300000 (48.6% of total)
+----------------------------------------
+
+Window 6:
+  Coordinates: [200, 0, 450, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.616545
+    - MS Score: 0.192067 (40%)
+    - SS Score: 0.799060 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.076827 (12.5% of total)
+    - SS: 0.239718 (38.9% of total)
+    - ED: 0.300000 (48.7% of total)
+----------------------------------------
+
+Window 7:
+  Coordinates: [100, 0, 350, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.613219
+    - MS Score: 0.263343 (40%)
+    - SS Score: 0.692940 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.105337 (17.2% of total)
+    - SS: 0.207882 (33.9% of total)
+    - ED: 0.300000 (48.9% of total)
+----------------------------------------
+
+Window 8:
+  Coordinates: [100, 0, 475, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.611372
+    - MS Score: 0.181747 (40%)
+    - SS Score: 0.795577 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.072699 (11.9% of total)
+    - SS: 0.238673 (39.0% of total)
+    - ED: 0.300000 (49.1% of total)
+----------------------------------------
+
+Window 9:
+  Coordinates: [0, 33, 250, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.605316
+    - MS Score: 0.222622 (40%)
+    - SS Score: 0.720892 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.089049 (14.7% of total)
+    - SS: 0.216267 (35.7% of total)
+    - ED: 0.300000 (49.6% of total)
+----------------------------------------
+
+Window 10:
+  Coordinates: [50, 33, 300, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.605302
+    - MS Score: 0.253942 (40%)
+    - SS Score: 0.679084 (30%)
+    - ED Score: 1.000000 (30%)
+  Contributions:
+    - MS: 0.101577 (16.8% of total)
+    - SS: 0.203725 (33.7% of total)
+    - ED: 0.300000 (49.6% of total)
+----------------------------------------
+

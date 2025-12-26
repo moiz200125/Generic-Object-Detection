@@ -1,0 +1,86 @@
+
+EXECUTION INSTRUCTIONS - GROUP A OBJECTNESS DETECTION
+=====================================================
+
+1. SETUP
+--------
+1.1 Install dependencies:
+    pip install numpy opencv-python scikit-image matplotlib tqdm
+
+1.2 Download PASCAL VOC 2007 dataset:
+    • From: https://www.kaggle.com/datasets/zaraks/pascal-voc-2007
+    • Extract to: data/VOCdevkit/VOC2007/
+
+2. PARAMETER LEARNING
+---------------------
+2.1 Bayesian Parameter Learning:
+    python learn_bayesian.py --dataset data/VOCdevkit/VOC2007 --output learned_params
+    
+    This will:
+    • Use 8 training images
+    • Generate 1000 windows per image
+    • Learn ED and SS parameters via Bayesian approach
+    • Save results in 'learned_params/'
+
+2.2 View learned parameters:
+    cat learned_params/bayesian_parameters.json
+
+3. OBJECTNESS DETECTION
+-----------------------
+3.1 Run on sample images:
+    python main_group_a.py --input sample_images --output results --config learned_params/config_bayesian.json
+    
+    This will:
+    • Process all images in sample_images/
+    • Use learned parameters from config_bayesian.json
+    • Save results in 'results/'
+
+3.2 Output includes:
+    • results/images/ - Visualizations with top windows
+    • results/text/ - Detailed scores for each window
+    • Console output with processing summary
+
+4. GENERATING REPORT
+--------------------
+4.1 Generate comprehensive report:
+    python generate_report.py
+    
+    This creates:
+    • assignment_report/assignment_report.txt - Detailed report
+    • assignment_report/report_pdf_ready.txt - PDF-ready version
+    • assignment_report/images/ - Visualizations
+
+5. TESTING INDIVIDUAL COMPONENTS
+--------------------------------
+5.1 Test MS cue:
+    python -c "from modules.ms_cue import test_ms_cue; test_ms_cue()"
+
+5.2 Test SS cue:
+    python -c "from modules.ss_cue import test_ss_cue; test_ss_cue()"
+
+5.3 Test ED cue:
+    python -c "from modules.ed_cue import test_ed_cue; test_ed_cue()"
+
+6. CUSTOMIZATION
+----------------
+6.1 Modify parameters in config_bayesian.json
+6.2 Change number of training images in learn_bayesian.py
+6.3 Adjust cue weights in main_group_a.py
+
+7. TROUBLESHOOTING
+------------------
+7.1 If VOC dataset not available, use --test flag:
+    python learn_bayesian.py --test
+
+7.2 If import errors, check module paths:
+    export PYTHONPATH=$PYTHONPATH:$(pwd)
+
+7.3 For memory issues, reduce image sizes or window counts
+
+====================================================================
+SUCCESS INDICATORS:
+• Learned parameters saved in JSON files
+• Visualizations generated in results/
+• Top windows correctly identified around objects
+• Report generated with all required sections
+====================================================================

@@ -1,0 +1,37 @@
+Objectness Detection Results for: 000030
+Date: 2025-12-25 22:10:56
+Number of top windows: 4
+--------------------------------------------------
+
+Window 1:
+  Coordinates: [0, 0, 375, 281]
+  Dimensions: 375 x 281
+  Total Score: 0.692620
+  MS Score:    0.284218
+  SS Score:    0.929775
+  ED Score:    1.000000
+------------------------------
+Window 2:
+  Coordinates: [200, 0, 450, 187]
+  Dimensions: 250 x 187
+  Total Score: 0.663932
+  MS Score:    0.300492
+  SS Score:    0.812449
+  ED Score:    1.000000
+------------------------------
+Window 3:
+  Coordinates: [0, 185, 250, 372]
+  Dimensions: 250 x 187
+  Total Score: 0.636954
+  MS Score:    0.177380
+  SS Score:    0.886674
+  ED Score:    1.000000
+------------------------------
+Window 4:
+  Coordinates: [200, 111, 450, 298]
+  Dimensions: 250 x 187
+  Total Score: 0.622251
+  MS Score:    0.220418
+  SS Score:    0.780278
+  ED Score:    1.000000
+------------------------------

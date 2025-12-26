@@ -1,0 +1,61 @@
+Objectness Detection Results for: 000033
+Date: 2025-12-25 22:10:52
+Number of top windows: 7
+--------------------------------------------------
+
+Window 1:
+  Coordinates: [250, 180, 500, 363]
+  Dimensions: 250 x 183
+  Total Score: 0.748699
+  MS Score:    0.473746
+  SS Score:    0.864000
+  ED Score:    1.000000
+------------------------------
+Window 2:
+  Coordinates: [0, 0, 500, 366]
+  Dimensions: 500 x 366
+  Total Score: 0.713710
+  MS Score:    0.287820
+  SS Score:    0.995273
+  ED Score:    1.000000
+------------------------------
+Window 3:
+  Coordinates: [150, 108, 400, 291]
+  Dimensions: 250 x 183
+  Total Score: 0.673202
+  MS Score:    0.359054
+  SS Score:    0.765268
+  ED Score:    1.000000
+------------------------------
+Window 4:
+  Coordinates: [250, 36, 500, 219]
+  Dimensions: 250 x 183
+  Total Score: 0.664615
+  MS Score:    0.317012
+  SS Score:    0.792699
+  ED Score:    1.000000
+------------------------------
+Window 5:
+  Coordinates: [0, 180, 250, 363]
+  Dimensions: 250 x 183
+  Total Score: 0.640647
+  MS Score:    0.199518
+  SS Score:    0.869464
+  ED Score:    1.000000
+------------------------------
+Window 6:
+  Coordinates: [0, 72, 250, 255]
+  Dimensions: 250 x 183
+  Total Score: 0.630950
+  MS Score:    0.267275
+  SS Score:    0.746798
+  ED Score:    1.000000
+------------------------------
+Window 7:
+  Coordinates: [100, 0, 350, 183]
+  Dimensions: 250 x 183
+  Total Score: 0.581441
+  MS Score:    0.284036
+  SS Score:    0.860809
+  ED Score:    0.698614
+------------------------------

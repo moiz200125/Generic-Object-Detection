@@ -1,0 +1,85 @@
+Objectness Detection Results for: 000007
+Date: 2025-12-25 18:55:09
+Number of top windows: 10
+--------------------------------------------------
+
+Window 1:
+  Coordinates: [0, 0, 500, 333]
+  Dimensions: 500 x 333
+  Total Score: 0.654417
+  MS Score:    0.139790
+  SS Score:    0.995003
+  ED Score:    1.000000
+------------------------------
+Window 2:
+  Coordinates: [0, 0, 250, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.650622
+  MS Score:    0.273572
+  SS Score:    0.803976
+  ED Score:    1.000000
+------------------------------
+Window 3:
+  Coordinates: [50, 0, 300, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.624956
+  MS Score:    0.294239
+  SS Score:    0.690867
+  ED Score:    1.000000
+------------------------------
+Window 4:
+  Coordinates: [0, 0, 375, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.622250
+  MS Score:    0.177182
+  SS Score:    0.837922
+  ED Score:    1.000000
+------------------------------
+Window 5:
+  Coordinates: [250, 0, 500, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.617061
+  MS Score:    0.141165
+  SS Score:    0.868651
+  ED Score:    1.000000
+------------------------------
+Window 6:
+  Coordinates: [200, 0, 450, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.616545
+  MS Score:    0.192067
+  SS Score:    0.799060
+  ED Score:    1.000000
+------------------------------
+Window 7:
+  Coordinates: [100, 0, 350, 166]
+  Dimensions: 250 x 166
+  Total Score: 0.613219
+  MS Score:    0.263343
+  SS Score:    0.692940
+  ED Score:    1.000000
+------------------------------
+Window 8:
+  Coordinates: [100, 0, 475, 249]
+  Dimensions: 375 x 249
+  Total Score: 0.611372
+  MS Score:    0.181747
+  SS Score:    0.795577
+  ED Score:    1.000000
+------------------------------
+Window 9:
+  Coordinates: [0, 33, 250, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.605316
+  MS Score:    0.222622
+  SS Score:    0.720892
+  ED Score:    1.000000
+------------------------------
+Window 10:
+  Coordinates: [50, 33, 300, 199]
+  Dimensions: 250 x 166
+  Total Score: 0.605302
+  MS Score:    0.253942
+  SS Score:    0.679084
+  ED Score:    1.000000
+------------------------------
